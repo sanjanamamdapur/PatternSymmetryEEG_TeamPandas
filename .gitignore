@@ -1,0 +1,38 @@
+﻿# Raw EEG data -- NEVER commit these (can be hundreds of GB)
+*.bdf
+*.edf
+*.set
+*.fdt
+*.vhdr
+*.vmrk
+*.eeg
+
+# The dataset folder itself
+data/
+ds004347/
+
+# Results -- large, regenerable from the pipeline
+results/*.png
+results/*.csv
+results/*.fif
+results/*.pkl
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+.venv/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+*.ipynb
+
+# Conda environment folder (if created locally)
+*.conda
+envs/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini

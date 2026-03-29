@@ -1,0 +1,22 @@
+name: eeg_project
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - numpy=1.26.4
+  - scipy=1.13.0
+  - matplotlib=3.9.0
+  - pandas=2.2.2
+  - jupyter
+  - jupytext         # lets you open .py files as notebooks in JupyterLab
+  - ipykernel
+  - pip:
+    - mne==1.7.1
+    - mne-bids==0.15.0
+    - mne-icalabel>=0.7.0   # 0.6.0 has numpy 2.0 incompatibility in _mergesimpts
+    - pymatreader     # needed to read .mat files if comparing with original MATLAB output
+    - openpyxl        # for reading .xlsx trial books
+    - pingouin==0.5.4 # clean paired t-tests with effect sizes
+    - onnxruntime==1.20.0  # for running ICLabel's ONNX model in Python
