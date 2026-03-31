@@ -14,14 +14,6 @@ https://nemar.org/dataexplorer/detail?dataset_id=ds004347
 Reproduce the P1/N1 ERP modulation by symmetry (Regular vs Random patterns)
 using a pipeline that deliberately differs from the authors' to test robustness.
 
-## Key pipeline differences from the original
-| Step | Original (MATLAB/EEGLAB) | Ours (MNE-Python) |
-|---|---|---|
-| Reference | Likely linked mastoids | Average reference |
-| Artefact removal | Manual IC rejection | Automated ICLabel |
-| Statistics | Mean amplitude t-test | Cluster permutation test |
-| Structure | Monolithic scripts | Modular src/ functions |
-
 ## Setup
 
 ```bash
